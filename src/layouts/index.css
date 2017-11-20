@@ -1,0 +1,192 @@
+@import url("//brick.a.ssl.fastly.net/TeX+Gyre+Heros:400/Roboto+Mono:400");@import url("//cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css");
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12.5pt;
+    line-height: 1.5;
+    letter-spacing: 0.5pt;
+    font-weight: normal;
+    baseline-shift: 10%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+h1 {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 2.00rem;
+    line-height: 2.25rem
+}
+h2 {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 1.50rem;
+    line-height: 1.75rem
+}
+h3 {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.50rem
+}
+h4 {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 1.00rem;
+    line-height: 1.25rem
+}
+h5 {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.00rem
+}
+a,
+button {
+    -webkit-tranisition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+    background: transparent;
+    border: 0;
+    color: #A5A7B3;
+    border-bottom: 2px solid transparent;
+    text-decoration: none
+}
+a:hover,
+button:hover {
+    color: #0F0F0F;
+    border-bottom-color: #A5A7B3;
+    cursor: pointer
+}
+a.reset {
+    text-decoration: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none
+}
+b {
+    -webkit-transform: scale(1, 5);
+    -moz-transform: scale(1, 5);
+    -ms-transform: scale(1, 5);
+    -o-transform: scale(1, 5);
+    transform: scale(1, 5)
+}
+.clear {
+    clear: both
+}
+a.launch,
+.external-links ul li a {
+    border: 1px solid #A5A7B3;
+    padding: 0.30rem 1rem 0.50rem 1rem;
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 20px
+}
+a.launch:hover,
+.external-links ul li a:hover {
+    background-color: #0F0F0F;
+    border-color: #0F0F0F;
+    color: #fff
+}
+p.measure {
+    max-width: 40em;
+    margin: 0 auto 1rem auto;
+    text-align: justify
+}
+ul.inline-list {
+    display: inline-block;
+    list-style: none
+}
+ul.inline-list li {
+    display: inline-block
+}
+
+header {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    position: relative
+}
+header a {
+    color: #0F0F0F;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent
+}
+header a:hover {
+    border-bottom-color: #0F0F0F
+}
+
+footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%
+}
+footer img {
+    margin: 1rem
+}
+footer ul {
+    margin: 0 auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+@media (max-width: 768px) {
+    footer ul {
+        display: block
+    }
+    footer ul li:first-of-type {
+        display: block;
+        width: 100%;
+        margin: 0 0 2rem 0
+    }
+}
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem
+}
+footer ul li a,
+footer ul li button {
+    text-decoration: none;
+    border: none;
+    display: block;
+    color: #A5A7B3
+}
+footer ul li a:hover,
+footer ul li button:hover {
+    color: #0F0F0F
+}
+footer ul li a svg,
+footer ul li button svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 7px;
+    fill: #A5A7B3
+}
+footer ul li a:hover svg,
+footer ul li button:hover svg {
+    fill: #0F0F0F
+}
+/*# sourceMappingURL=style.css.map */
