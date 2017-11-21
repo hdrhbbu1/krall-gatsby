@@ -9,7 +9,7 @@ html {
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 22px;
+    font-size: 14.5pt;
     line-height: 1.5;
     letter-spacing: 0.5pt;
     font-weight: bold;
@@ -21,6 +21,18 @@ body {
 
     color:#404040;
     background-color:#fff;
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+
+
+        body{
+            font-size:11pt;
+    }
+
 
 }
 
