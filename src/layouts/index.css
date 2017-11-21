@@ -1,4 +1,4 @@
-@import url("https://fontlibrary.org/face/inconsolata-lgc");
+@import url("https://fontlibrary.org/face/inconsolata-lgc");@import url("//cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css");
 
 *,
 html {
@@ -48,6 +48,7 @@ header{
   width:100%;
 
   z-index:999999999;
+  background:#fff;
 
 }
 .headerWrapper{
@@ -78,10 +79,14 @@ header{
   margin:1rem 0 4rem 0;
 }
 
+h2{
+  margin-bottom:1rem;
+}
+
 #navigation{
   max-width:1200px;
   margin:0 auto;
-  padding:0 2rem 5rem 2rem;
+  padding:0 2rem 2rem 2rem;
 }
 
 iframe{
@@ -114,4 +119,29 @@ footer{
 
 #content section:not(:last-child){
   margin-bottom:5rem;
+}
+
+p{
+  padding-bottom:1rem;
+}
+p a, section a{
+  border-bottom:1px solid #999;
+}
+p a:hover, section a:hover{
+  border-bottom:1px solid #fff;
+}
+a.action{
+  border:1px solid #999;
+  padding:0.35rem 0.65rem 0.5rem 0.6rem;
+  background:#fff;
+  position:relative;
+}
+a.action:hover{
+  border:1px solid #404040;
+  background:#404040;
+  color:#efefef;
+}
+
+.grid{
+  margin-bottom:1rem;
 }
