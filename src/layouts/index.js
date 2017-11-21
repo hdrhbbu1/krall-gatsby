@@ -2,73 +2,74 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-
+import get from 'lodash/get'
 import './index.css'
 
 const ListLink = props =>
-  <li style={{
-    listStyle: 'none',
-    width: '100%',
-  }}>
-    <Link to={props.to} style={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      padding: '0.5rem 0'
-    }}>
+  <li>
+    <Link to={props.to}>
       <span>{props.title}</span>
       <span>{props.year}</span>
     </Link>
   </li>
 
-const Header = () => (
-  <div style={{
-
-    marginBottom: '3rem',
-    display: 'flex',
-    justifyContent: 'space-between'
-
-  }}>
-
-    <h1 itemprop="name" style={{ fontSize: 'inherit' }}>
-      <Link to="/" style={{ border: 0 }}>Zach Krall</Link>
+const Header = props => (
+  <header>
+  <div className="headerWrapper">
+    <h1 itemprop="name">
+      <Link to="/" style={{ border: 0 }}>{props.siteTitle}</Link>
     </h1>
     <div>
       <Link to="/info">Information</Link>
     </div>
   </div>
+  </header>
 )
 
 const Footer = () => (
-  <div>
-  <ul style={{ margin: '3rem auto 6rem auto' }}>
-    <ListLink to="/art/voice" title="Untitled Sound Piece (First Draft)" year="2017" />
-    <ListLink to="/art/bandwidth" title="Bandwidth (Unique Forms of Continuity)" year="2016" />
-    <ListLink to="/art/none-all-of-these-people-are-me" title="None/All of these People are Me" year="2013" />
+  <footer>
+
+  <ul className="inline">
+    <li><a href="mailto:zach@zachkrall.com">zach@zachkrall.com</a></li>
   </ul>
 
-  <ul style={{ display:'inline-block',listStyle:'none'}}>
-    <li><Link to="https://twitter.com/zachkrall">Twitter</Link></li>
+  <ul className="inline">
+    <li><a href="https://twitter.com/zachkrall">Twitter</a></li>
+    <li><a href="https://instagram.com/zachkrall">Instagram</a></li>
+    <li><a href="https://github.com/zachkrall">GitHub</a></li>
+    <li><a href="https://are.na.com/zach-krall">Are.na</a></li>
+    <li><a href="https://keybase.io/zachkrall/">Keybase</a></li>
   </ul>
-  </div>
+  </footer>
 )
 
-const TemplateWrapper = ({ children }) => (
-  <div style={{
-    maxWidth: 900,
-    margin: '0 auto',
-    padding: '2rem'
-  }}>
+const TemplateWrapper = ({ children, data }) => (
+  <div id="container">
     <Helmet
       title="Zach Krall"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Zach Krall is a visual artist and creative technologist based in New York City.' }
       ]}
     />
-    <Header />
+    <Header siteTitle="Zach Krall"/>
+
     <div id="content" style={{ margin: '0 auto 6rem auto' }}>
       {children()}
     </div>
+
+    <div id="navigation">
+
+      {data.allMarkdownRemark.totalCount} Projects
+
+      {data.allMarkdownRemark.edges.map(({ node }) =>
+      <Link to={node.fields.slug}>  <div key={node.id}>
+
+            {node.frontmatter.title}{", "}{node.frontmatter.date}
+
+        </div></Link>
+      )}
+    </div>
+
     <Footer />
   </div>
 )
@@ -78,3 +79,29 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
