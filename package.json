@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "zachkrall.com",
+  "description": "Zach Krall is a visual artist and creative technologist based in New York City",
+  "version": "3.0.0",
+  "author": "Zach Krall <zach@zachkrall.com>",
   "dependencies": {
     "gatsby": "^1.9.117",
     "gatsby-link": "^1.6.28",
