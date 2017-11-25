@@ -110,6 +110,10 @@ iframe{
 
 */
 
+.gatsby-resp-iframe-wrapper{
+  margin-bottom:3rem;
+}
+
 .gatsby-resp-image-wrapper{
   margin-bottom:3rem;
 }
