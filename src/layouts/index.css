@@ -24,15 +24,12 @@ body {
 
 }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
+/* iPhone 7 screen size */
+@media (max-width : 667px) {
 
-
-        body{
+    body{
             font-size:11pt;
     }
-
 
 }
 
@@ -98,7 +95,7 @@ h2{
 #navigation{
   max-width:1200px;
   margin:0 auto;
-  padding:0 2rem 2rem 2rem;
+  padding:0 2rem 4rem 2rem;
 }
 
 iframe{
@@ -106,7 +103,7 @@ iframe{
   margin:0;padding:0;
 }
 
-/* Not needed with gatsby-remark-responsive-iframe 
+/* Not needed with gatsby-remark-responsive-iframe
 
 .videoWrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin:0 auto 8pt 0}
 .videoWrapper iframe{position:absolute;top:0;left:0;width:100%;height:93.75%}
@@ -148,9 +145,11 @@ p a:hover, section a:hover{
 }
 a.action{
   border:1px solid #999;
-  padding:0.35rem 0.65rem 0.5rem 0.6rem;
+  padding:0.15rem 0.35rem 0.22rem 0.3rem;
   background:#fff;
   position:relative;
+  display:inline-block;
+  margin-bottom:0.25rem;
 }
 a.action:hover{
   border:1px solid #404040;

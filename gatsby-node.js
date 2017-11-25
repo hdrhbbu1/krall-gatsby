@@ -1,6 +1,7 @@
 const path = require(`path`)
 const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const fs = require('fs-extra')
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
@@ -43,4 +44,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       resolve()
     })
   })
+}
+
+exports.onPostBuild = () => {
+  console.log('building static assets - it works!')
+  fs.copySync(path.join(__dirname, '/assets'), path.join(__dirname, '/public/assets'))
 }

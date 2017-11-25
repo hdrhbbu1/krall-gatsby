@@ -1,74 +1,66 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-09734120cbfbc8d1b866.js",
-      "component---src-pages-index-js-09734120cbfbc8d1b866.js.map"
+      "component---src-pages-index-js-51d067cb736d48f8a03a.js",
+      "component---src-pages-index-js-51d067cb736d48f8a03a.js.map"
     ],
     "path---": [
-      "path----71a585d2f1bd1a971094.js",
-      "path----71a585d2f1bd1a971094.js.map"
+      "path----18b76860dedd4e12bd99.js",
+      "path----18b76860dedd4e12bd99.js.map"
     ],
     "path---info": [
       "path---info-a0e39f21c11f6a62c5ab.js",
       "path---info-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "component---src-pages-art-voice-index-js": [
-      "component---src-pages-art-voice-index-js-b4a7ce9a397332806a50.js",
-      "component---src-pages-art-voice-index-js-b4a7ce9a397332806a50.js.map"
     ],
     "component---src-templates-project-js": [
       "component---src-templates-project-js-8f892849633af9e7202c.js",
       "component---src-templates-project-js-8f892849633af9e7202c.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1d4252959ccb896208af.js",
-      "component---src-layouts-index-js-1d4252959ccb896208af.js.map"
+      "component---src-layouts-index-js-a4d34b80796a4fb087ac.js",
+      "component---src-layouts-index-js-a4d34b80796a4fb087ac.js.map"
     ],
     "path---index": [
-      "path---index-f74e13c00e4bf7ecdd0a.js",
-      "path---index-f74e13c00e4bf7ecdd0a.js.map"
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+      "component---src-pages-404-js-f229876792de9d040b01.js",
+      "component---src-pages-404-js-f229876792de9d040b01.js.map"
     ],
     "commons": [
-      "commons-e0a4d3a61ab0efef38cf.js",
-      "commons-e0a4d3a61ab0efef38cf.js.map"
+      "commons-f22aa2e57a9748905dc1.js",
+      "commons-f22aa2e57a9748905dc1.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-info-js": [
-      "component---src-pages-info-js-ed15fdd7531bebb0f0c5.js",
-      "component---src-pages-info-js-ed15fdd7531bebb0f0c5.js.map"
+      "component---src-pages-info-js-667009ee5bd0cdaf2e18.js",
+      "component---src-pages-info-js-667009ee5bd0cdaf2e18.js.map"
     ],
     "app": [
-      "app-81e8781d8c61e9b3a935.js",
+      "app-b36688ebbf0f5cac63a9.js",
       "build-js-styles.css",
-      "app-81e8781d8c61e9b3a935.js.map",
+      "app-b36688ebbf0f5cac63a9.js.map",
       "build-js-styles.css.map"
     ],
     "path---art-voice": [
-      "path---art-voice-a0e39f21c11f6a62c5ab.js",
-      "path---art-voice-a0e39f21c11f6a62c5ab.js.map"
+      "path---art-voice-f0ad6a19e600e25623d3.js",
+      "path---art-voice-f0ad6a19e600e25623d3.js.map"
     ],
     "path---art-bandwidth": [
-      "path---art-bandwidth-828d965ec1a18e8c7603.js",
-      "path---art-bandwidth-828d965ec1a18e8c7603.js.map"
+      "path---art-bandwidth-2c1f4e3975350feb6670.js",
+      "path---art-bandwidth-2c1f4e3975350feb6670.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---art-none-all-of-these-people-are-me": [
-      "path---art-none-all-of-these-people-are-me-a0e39f21c11f6a62c5ab.js",
-      "path---art-none-all-of-these-people-are-me-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "component---src-pages-art-none-all-of-these-people-are-me-index-js": [
-      "component---src-pages-art-none-all-of-these-people-are-me-index-js-60df8e64bfb947eac1e9.js",
-      "component---src-pages-art-none-all-of-these-people-are-me-index-js-60df8e64bfb947eac1e9.js.map"
+      "path---art-none-all-of-these-people-are-me-de4bf1e0ce5f28309e9e.js",
+      "path---art-none-all-of-these-people-are-me-de4bf1e0ce5f28309e9e.js.map"
     ]
   }
 }
