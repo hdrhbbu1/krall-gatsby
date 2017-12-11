@@ -49,4 +49,5 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.onPostBuild = () => {
   console.log('building static assets - it works!')
   fs.copySync(path.join(__dirname, '/assets'), path.join(__dirname, '/public/assets'))
+  fs.copySync(path.join(__dirname, '/well-known'), path.join(__dirname, '/public/.well-known'))
 }
