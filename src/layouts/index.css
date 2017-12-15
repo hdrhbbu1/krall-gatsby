@@ -64,7 +64,8 @@ header{
   margin:0 auto;
   max-width:1200px;
     padding:2rem;
-
+  display:flex;
+  justify-content: space-between;
 }
 .headerWrapper * {
   font-size:inherit;
@@ -72,7 +73,7 @@ header{
   border-bottom:none;
 }
 .headerWrapper a{
-  margin-right:2rem;
+  /*margin-right:2rem;*/
 }
 .headerWrapper a:hover{
   color:#404040;
@@ -81,17 +82,24 @@ header{
 #content{
   max-width:1200px;
   margin:0 auto;
-  padding:8rem 2rem 0rem 2rem;
+  padding:5rem 2rem 0rem 2rem;
 }
 #content h1{
-  /*text-align:center;*/
-  margin:1rem 0 2rem 0;
+  text-align:center;
+  margin:1rem 0 4rem 0;
 }
 
-#content div.projectMetadata{
+dl.projectMetadata{
 
   margin-bottom:4rem;
+  padding:2rem 0;
 
+}
+dt{
+  font-size:0.75em;
+}
+dd{
+  margin-bottom:1em;
 }
 
 h2{
@@ -114,23 +122,24 @@ h2{
   text-align:center;
 }
 
-@media (max-width : 667px) {
+.projectItem{
+  padding:0 1.5rem;
+  margin-bottom:4rem;
+}
+.projectItem img{
+  max-width:100%;
+  max-height:150px;
+  height:auto;
+  width:auto;
+  margin:0;padding:0;
+}
+
+@media (max-width : 750px) {
 
   #navigation a{
     width:calc(100% / 3);
   }
 
-}
-
-.projectItem{
-  padding:1rem;
-  margin-bottom:1rem;
-}
-.projectItem img{
-  max-width:100%;
-  max-height:175px;
-  height:auto;
-  width:auto;
 }
 
 iframe{
@@ -166,7 +175,7 @@ footer{
   max-width:1200px;
   margin:0 auto;
   /*text-align:center;*/
-  padding:4rem 2rem 4rem 2rem;
+  padding:2rem 2rem 4rem 2rem;
 }
 
 #content section:not(:last-child){
@@ -175,6 +184,7 @@ footer{
 
 p{
   padding-bottom:1rem;
+  text-align:justify;
 }
 p a, section a{
   border-bottom:1px solid #999;
@@ -205,4 +215,30 @@ span.caption{
   margin-bottom:4rem;
   text-align:center;
   display:block;
+}
+
+form.tl{
+  display:flex;
+  align-items: center;
+}
+.tlInput{
+  width:15em;
+  font-size:0.85em;
+  border:2px inset #404040;
+  padding:4px;margin-right:1em;
+  border-radius:0;
+  -webkit-appearance: none;
+  background:#e9e9e9;
+}
+.tlSubmit{
+
+  border:2px outset #404040;
+  border-radius:0;
+  padding:4px;font-size:0.85em;
+  -webkit-appearance: none;
+  background:#c0c0c0;
+}
+.tlSubmit:active{
+  border-style:inset;
+  background:#e9e9e9;
 }

@@ -43,25 +43,7 @@ const TemplateWrapper = ({ children, data }) => (
     </div>
 
     <div id="navigation">
-
-      {
-
-        data.allMarkdownRemark.edges.map(
-          ({ node }) =>
-                <Link to={node.fields.slug}>
-                    <div key={node.id} className="projectItem">
-
-                    {(node.frontmatter.thumbnail !== null) ?
-                        <img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>
-                      :
-                        "?"
-                    }
-                    </div>
-                </Link>
-        )
-
-      }
-
+      {data.allMarkdownRemark.edges.map(({ node }) => <Link to={node.fields.slug}><div key={node.id} className="projectItem">{(node.frontmatter.thumbnail !== null)?<img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>:<span>?</span>}</div></Link>)}
     </div>
 
     <footer>

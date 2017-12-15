@@ -1,26 +1,38 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Email from './email.gif'
 
 const IndexPage = () => (
   <div>
-    <section>
+    <section style={{marginTop:'4rem'}}>
     <h2>About</h2>
     <p>
-    Zach Krall (American, b. 1993 Japan) is a visual artist and creative technologist using images, video, and code to explore a contemporary understanding of the human condition.
-    </p>
-    <p>
-    You can download his public encryption key on <a href="https://keybase.io/zachkrall/key.asc" className="action">Keybase</a> and join his mailing list through <a href="http://tinyletter.com/zachkrall" className="action">Tinyletter</a>.</p>
-
-    <p>His email is <a href="mailto:zach@zachkrall.com" className="action">zach@zachkrall.com</a> but you may just want to <a href="http://twitter.com/zachkrall" className="action">Tweet</a> at him.
+    Zach Krall (American, b. 1993 Japan) is an artist-coder based in New York City. Currently, Krall's practice explores the relationships between physical identities and their digital manifestations. Since deleting his Facebook account, Krall receives fewer invitations to events. He received his BFA in Photography from the School of Visual Arts.
     </p>
     </section>
+
+    <section>
+    <h2>Contact</h2>
+    <p>
+    Email: <a href="mailto:zach@zachkrall.com">zach@zachkrall.com</a>
+<br />Twitter: <a href="https://twitter.com/zachkrall">@zachkrall</a>
+<br/>PGP: <a href="https://keybase.io/zachkrall/key.asc">9FAC EB7E A441 FCD3</a>
+<br/>Rotonde: <a href="dat://9a1b59963085cdc9edd8fbb89e73c6b4f573fcf188e68d55b2faa3855520b815/">dat://9a1b59..15/</a> (requires <a href="https://beakerbrowser.com/">Beaker Browser</a>)
+</p>
+    </section>
+
+    <section>
+    <img src={Email}/>
+    <form action="https://tinyletter.com/zachkrall" method="post" target="popupwindow" className="tl" onsubmit="window.open('https://tinyletter.com/zachkrall', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" className="tlInput" name="email" id="tlemail" placeholder="Your Email Address" /><input type="hidden" value="1" name="embed"/><input className="tlSubmit" type="submit" value="Subscribe"/></form>
+    </section>
+
 
     <section>
 
     <h2>Curriculum Vitae</h2>
 
-    {/* EDUCATION */}<div className="grid cv"><div className="col-12"><h3>Education</h3></div><div className="col-12 grid"><div className="col-2">2015</div><div className="col-10">BFA Photography, Honors Program, School of Visual Arts (New York, NY)</div></div></div>{/* EXHIBITIONS */}<div className="grid cv"><div className="col-12"><h3>Exhibitions</h3></div><div className="col-12 grid"><div className="col-2">2018</div><div className="col-10">
-              Forthcoming, TBA (New York, NY) <sup>solo</sup></div><div className="col-2">2017</div><div className="col-10">
+    {/* EDUCATION */}
+    <div className="grid cv"><div className="col-12"><h3>Education</h3></div><div className="col-12 grid"><div className="col-2">2015</div><div className="col-10">BFA Photography, Honors Program, School of Visual Arts (New York, NY)</div></div></div>{/* EXHIBITIONS */}<div className="grid cv"><div className="col-12"><h3>Exhibitions</h3></div><div className="col-12 grid"><div className="col-2">2017</div><div className="col-10">
               where-hows, Where Haus (<a href="https://en.wikipedia.org/wiki/The_Hole,_New_York" rel="noopener">The Hole</a>, NY)
               <br /><a href="https://sfmoma.show/" rel="noopener">Unauthorized SFMOMA Show #567</a>, San Francisco Museum of Modern Art (San Francisco, CA) <sup>online</sup><br /><a href="https://web.archive.org/web/20170621143338/http://www.sva.edu/events/events-exhibitions/all-staff-art-show-2017">All Staff Art Show</a>, School of Visual Arts (New York, NY)
             </div><div className="col-2">2016</div><div className="col-10"><a href="https://www.facebook.com/events/1596926450604299/" rel="noopener">Slippery When Wet</a>, Chinatown Soup (New York, NY)
@@ -87,7 +99,6 @@ const IndexPage = () => (
             </div></div></div>
 
     </section>
-
   </div>
 )
 
