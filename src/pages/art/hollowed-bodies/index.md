@@ -4,6 +4,7 @@ date: '2012'
 medium: Archival Inkjet Prints
 dimensions: Variable
 project_status: Completed
+thumbnail: './thumb.jpg'
 ---
 
 ![](02-zach-krall.jpg)

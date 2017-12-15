@@ -1,6 +1,7 @@
 ---
 title: See You in Meatspace
 date: '2015'
+thumbnail: './thumb.jpg'
 ---
 
 ![](01.jpg)

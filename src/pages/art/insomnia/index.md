@@ -4,6 +4,7 @@ date: '2012'
 medium: .gif
 dimensions: Variable
 project_status: Completed
+thumbnail: './thumb.jpg'
 ---
 
 ![](01.gif)

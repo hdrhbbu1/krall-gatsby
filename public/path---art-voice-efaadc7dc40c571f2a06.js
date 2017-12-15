@@ -1,2 +1,0 @@
-webpackJsonp([0xdc4fd617f7e6],{231:function(e,t){e.exports={data:{markdownRemark:{html:'<iframe src="https://player.vimeo.com/video/243547454?color=ffffff&title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',frontmatter:{title:"Untitled Sound Piece (First Draft)"}}},pathContext:{slug:"/art/voice/"}}}});
-//# sourceMappingURL=path---art-voice-efaadc7dc40c571f2a06.js.map

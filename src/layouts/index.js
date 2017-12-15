@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import './index.css'
 
+//{node.frontmatter.title}{", "}{node.frontmatter.date}
+
+
 const TemplateWrapper = ({ children, data }) => (
   <div id="container">
     <Helmet
@@ -12,7 +15,8 @@ const TemplateWrapper = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Zach Krall is a visual artist and creative technologist based in New York City.' },
         { name: 'msapplication-config', content: '/assets/browserconfig.xml' },
-        { name: 'theme-color', content: '#ffffff' }
+        { name: 'theme-color', content: '#ffffff' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' }
       ]}
       link={[
         { rel: 'apple-touch-icon', size: '180x180', href: '/assets/apple-touch-icon.png' },
@@ -40,13 +44,24 @@ const TemplateWrapper = ({ children, data }) => (
 
     <div id="navigation">
 
-      {data.allMarkdownRemark.edges.map(({ node }) =>
-      <Link to={node.fields.slug}>  <div key={node.id}>
+      {
 
-            {node.frontmatter.title}{", "}{node.frontmatter.date}
+        data.allMarkdownRemark.edges.map(
+          ({ node }) =>
+                <Link to={node.fields.slug}>
+                    <div key={node.id} className="projectItem">
 
-        </div></Link>
-      )}
+                    {(node.frontmatter.thumbnail !== null) ?
+                        <img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>
+                      :
+                        "?"
+                    }
+                    </div>
+                </Link>
+        )
+
+      }
+
     </div>
 
     <footer>
@@ -73,21 +88,38 @@ TemplateWrapper.propTypes = {
 export default TemplateWrapper
 
 export const query = graphql`
-  query LayoutQuery {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "YYYY")
-          }
-          fields {
-            slug
+query new{
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC} ){
+    edges{
+      node{
+        id
+        fields{
+          slug
+        }
+        frontmatter{
+          title
+          date(formatString: "YYYY")
+          medium
+          dimensions
+          project_status
+          duration
+          thumbnail{
+            childImageSharp{
+              original{
+                src
+                width
+                height
+              }
+              responsiveSizes(maxWidth: 400){
+                src
+                srcSet
+                sizes
+              }
+            }
           }
         }
       }
     }
   }
+}
 `

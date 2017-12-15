@@ -85,7 +85,13 @@ header{
 }
 #content h1{
   /*text-align:center;*/
-  margin:1rem 0 4rem 0;
+  margin:1rem 0 2rem 0;
+}
+
+#content div.projectMetadata{
+
+  margin-bottom:4rem;
+
 }
 
 h2{
@@ -96,6 +102,35 @@ h2{
   max-width:1200px;
   margin:0 auto;
   padding:0 2rem 4rem 2rem;
+
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+#navigation a{
+  display:inline;
+  width:20%;
+  text-align:center;
+}
+
+@media (max-width : 667px) {
+
+  #navigation a{
+    width:calc(100% / 3);
+  }
+
+}
+
+.projectItem{
+  padding:1rem;
+  margin-bottom:1rem;
+}
+.projectItem img{
+  max-width:100%;
+  max-height:175px;
+  height:auto;
+  width:auto;
 }
 
 iframe{
@@ -163,4 +198,11 @@ a.action:hover{
 
 .grid{
   margin-bottom:1rem;
+}
+
+span.caption{
+  margin-top:-1rem;
+  margin-bottom:4rem;
+  text-align:center;
+  display:block;
 }

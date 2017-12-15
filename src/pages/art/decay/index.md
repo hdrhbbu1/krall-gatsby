@@ -4,6 +4,7 @@ date: '2011'
 medium: .gif
 duration: Infinite Loop
 dimensions: Variable
+thumbnail: './thumb.jpg'
 ---
 
 <style type="text/css">#project-decay-vh{min-height:60vh;text-align:center;padding-bottom:80px;}table.decay{margin:0;}table.decay td img{width:100%;height:auto;max-width:160px;max-height:150px;}table.decay td, table.decay tr{margin:0px;padding: 0 10px 5px 0;}</style>

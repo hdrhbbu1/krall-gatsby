@@ -1,0 +1,2 @@
+webpackJsonp([0xa4d467c470bc],{269:function(e,t){e.exports={data:{markdownRemark:{html:"",frontmatter:{title:"Presence/Absence",date:"2012",medium:"Archival Inkjet Prints",dimensions:null,duration:null,project_status:"Not Editioned"}}},pathContext:{slug:"/art/presence-absence/"}}}});
+//# sourceMappingURL=path---art-presence-absence-dcc25f38703c1e645719.js.map
