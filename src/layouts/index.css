@@ -231,6 +231,7 @@ form.tl{
   border-radius:0;
   -webkit-appearance: none;
   background:#e9e9e9;
+  font-family: inherit;
 }
 .tlSubmit{
 
@@ -239,6 +240,7 @@ form.tl{
   padding:4px;font-size:0.85em;
   -webkit-appearance: none;
   background:#c0c0c0;
+  font-family: inherit;
 }
 .tlSubmit:active{
   border-style:inset;
