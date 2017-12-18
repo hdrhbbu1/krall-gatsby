@@ -7,7 +7,7 @@ const IndexPage = () => (
     <section style={{marginTop:'4rem'}}>
     <h2>About</h2>
     <p>
-    Zach Krall (American, b. 1993 Japan) is an artist-coder based in New York City. Currently, Krall's practice explores the relationships between physical identities and their digital manifestations. Since deleting his Facebook account, Krall receives fewer invitations to events. He received his BFA from the School of Visual Arts in 2015.
+    Zach Krall (American, b. 1993 Japan) is an artist-coder based in New York City. Currently, Krall's practice explores the relationships between physical identities and their digital manifestations. Krall is an advocate for the decentralized web. He received his BFA from the School of Visual Arts in 2015.
     </p>
     </section>
 
