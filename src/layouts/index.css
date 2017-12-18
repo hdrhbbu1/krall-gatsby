@@ -1,4 +1,6 @@
-@import url("https://fontlibrary.org/face/inconsolata-lgc");@import url("//cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css");
+@import url("https://fontlibrary.org/face/inconsolata-lgc");
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+@import url("//cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css");
 
 *,
 html {
@@ -8,7 +10,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Barlow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14.5pt;
     line-height: 1.5;
     letter-spacing: 0.5pt;
