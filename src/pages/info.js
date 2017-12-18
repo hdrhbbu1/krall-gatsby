@@ -62,7 +62,7 @@ const IndexPage = () => (
             </div><div className="col-2">2015</div><div className="col-10">
               IT MOVES!, School of Visual Arts (New York, NY)
             </div></div></div>{/* AWARDS */}<div className="grid cv"><div className="col-12"><h3>Awards / Residencies / Hackathons</h3></div><div className="col-12 grid"><div className="col-2">2016</div><div className="col-10"><a href="http://artahack.io" rel="noopener">Art-A-Hack</a>, "<a href="https://artahack.io/projects/kinect-vr/" rel="noopener">KinectVR</a>" Participant, The Volumetric Society, ThoughtWorks, NYU Tandon School of Engineering (Brooklyn, NY)
-            </div><div className="col-2">2013</div><div className="col-10"><a href="http://photo.vandm.com/" rel="noopener">V&amp;M Photography</a> Emerging Artist
+            </div><div className="col-2">2013</div><div className="col-10"><a href="https://web.archive.org/web/20130507084535/http://photo.vandm.com:80/?product_cat=zach-krall" rel="noopener">V&amp;M Photography</a> Emerging Artist
             </div></div></div>{/* WORKSHOPS */}<div className="grid cv"><div className="col-12"><h3>Workshops</h3></div><div className="col-12 grid"><div className="col-2">
               2017
             </div><div className="col-10">
