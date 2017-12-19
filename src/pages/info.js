@@ -7,7 +7,7 @@ const IndexPage = () => (
     <section style={{marginTop:'4rem'}}>
     <h2>About</h2>
     <p>
-    Zach Krall (American, b. 1993 Japan) is an artist-coder based in New York City. Currently, Krall's practice explores the relationships between physical identities and their digital manifestations. Since deleting his Facebook account, Krall receives fewer invitations to events. He received his BFA from the School of Visual Arts in 2015.
+    Zach Krall (American, b. 1993 Japan) is an artist-coder based in New York City. Currently, Krall's practice explores the relationships between physical identities and their digital manifestations. Krall is an advocate for the decentralized web. He received his BFA from the School of Visual Arts in 2015.
     </p>
     </section>
 
@@ -62,7 +62,7 @@ const IndexPage = () => (
             </div><div className="col-2">2015</div><div className="col-10">
               IT MOVES!, School of Visual Arts (New York, NY)
             </div></div></div>{/* AWARDS */}<div className="grid cv"><div className="col-12"><h3>Awards / Residencies / Hackathons</h3></div><div className="col-12 grid"><div className="col-2">2016</div><div className="col-10"><a href="http://artahack.io" rel="noopener">Art-A-Hack</a>, "<a href="https://artahack.io/projects/kinect-vr/" rel="noopener">KinectVR</a>" Participant, The Volumetric Society, ThoughtWorks, NYU Tandon School of Engineering (Brooklyn, NY)
-            </div><div className="col-2">2013</div><div className="col-10"><a href="http://photo.vandm.com/" rel="noopener">V&amp;M Photography</a> Emerging Artist
+            </div><div className="col-2">2013</div><div className="col-10"><a href="https://web.archive.org/web/20130507084535/http://photo.vandm.com:80/?product_cat=zach-krall" rel="noopener">V&amp;M Photography</a> Emerging Artist
             </div></div></div>{/* WORKSHOPS */}<div className="grid cv"><div className="col-12"><h3>Workshops</h3></div><div className="col-12 grid"><div className="col-2">
               2017
             </div><div className="col-10">

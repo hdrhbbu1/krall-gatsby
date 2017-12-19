@@ -1,4 +1,6 @@
-@import url("https://fontlibrary.org/face/inconsolata-lgc");@import url("//cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css");
+@import url("//fontlibrary.org/face/inconsolata-lgc");
+@import url('//fonts.googleapis.com/css?family=Barlow:400,700');
+@import url("//cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css");
 
 *,
 html {
@@ -8,7 +10,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Barlow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14.5pt;
     line-height: 1.5;
     letter-spacing: 0.5pt;
@@ -229,6 +231,7 @@ form.tl{
   border-radius:0;
   -webkit-appearance: none;
   background:#e9e9e9;
+  font-family: inherit;
 }
 .tlSubmit{
 
@@ -237,6 +240,7 @@ form.tl{
   padding:4px;font-size:0.85em;
   -webkit-appearance: none;
   background:#c0c0c0;
+  font-family: inherit;
 }
 .tlSubmit:active{
   border-style:inset;
