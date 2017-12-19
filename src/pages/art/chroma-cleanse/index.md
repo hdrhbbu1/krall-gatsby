@@ -1,5 +1,5 @@
 ---
-title: Chroma Cleanse
+title: Chroma Cleanse 2.0
 date: '2015'
 medium: Video (color, sound)
 duration: 1 min 59 sec
