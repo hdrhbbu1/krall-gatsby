@@ -57,7 +57,7 @@ const IndexPage = () => (
             </div></div></div>{/* SCREENINGS */}<div className="grid cv"><div className="col-12"><h3>Screenings</h3></div><div className="col-12 grid"><div className="col-2">2016</div><div className="col-10"><a href="http://svatheatre.com/events/afterschoolspecial2016/">After School Special</a>, September 16, SVA Theatre (New York, NY)
               <br /><a href="http://blog.sva.edu/2016/04/sva-premieres-introducing-hollywood-to-the-next-wave-of-animators-and-filmmakers/">SVA Premieres</a>, June 2, The Linwood Dunn Theatre (Los Angeles, CA)
             </div></div></div>{/* CURATORIAL PROJECTS */}<div className="grid cv"><div className="col-12"><h3>Curatorial Projects</h3></div><div className="col-12 grid"><div className="col-2">2017</div><div className="col-10">
-              Log On?, TBA (New York, NY) with Emily Sussman
+              Log On, Ludlow House (New York, NY) with Emily Sussman
             </div><div className="col-2">2016</div><div className="col-10"><a href="https://www.are.na/zach-krall/what-happens-when" rel="noopener">What Happens When...</a>, POWRPLNT (Brooklyn, NY)
             </div><div className="col-2">2015</div><div className="col-10">
               IT MOVES!, School of Visual Arts (New York, NY)

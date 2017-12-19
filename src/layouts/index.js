@@ -29,11 +29,11 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <header>
     <div className="headerWrapper">
-      <h1 itemprop="name">
-        <Link to="/" style={{ border: 0 }}>Zach Krall</Link>
+      <h1 itemprop="name" class="name">
+        ./<Link to="/" style={{ border: 0 }}>Zach_Krall</Link>
       </h1>
       <div>
-        <Link to="/info">Information</Link>
+        <Link to="/info">Info</Link>
       </div>
     </div>
     </header>
@@ -43,6 +43,7 @@ const TemplateWrapper = ({ children, data }) => (
     </div>
 
     <div id="navigation">
+
       {data.allMarkdownRemark.edges.map(({ node }) => <Link to={node.fields.slug}><div key={node.id} className="projectItem">{(node.frontmatter.thumbnail !== null)?<img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>:<span>?</span>}</div></Link>)}
     </div>
 
@@ -73,6 +74,7 @@ export default TemplateWrapper
 export const query = graphql`
 query new{
   allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC} ){
+    totalCount
     edges{
       node{
         id
