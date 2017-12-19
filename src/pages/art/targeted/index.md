@@ -5,7 +5,7 @@ medium: p5.js
 dimensions: Variable
 thumbnail: './thumb.jpg'
 ---
-<iframe src="https://zachkrall.github.io/targeted/three.html" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://zachkrall.github.io/p5-sketches/targeted/three.html" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <iframe src="https://player.vimeo.com/video/207867940?color=ffffff&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
