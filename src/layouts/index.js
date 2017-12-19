@@ -62,7 +62,7 @@ const TemplateWrapper = ({ children, data }) => (
       <li><a href="https://keybase.io/zachkrall/">Keybase</a></li>
     </ul>
 
-    <a title="Web Analytics" href="http://statcounter.com/" target="_blank" style={{ display: 'block' }}><img src="//c.statcounter.com/11548879/0/697b2f39/0/"/></a>
+    <a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img src="//c.statcounter.com/11548879/0/697b2f39/0/" alt="Web Analytics" style={{opacity: '0.0'}}/></a>
     </footer>
   </div>
 )
