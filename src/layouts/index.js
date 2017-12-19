@@ -57,6 +57,7 @@ const TemplateWrapper = ({ children, data }) => (
       <li><a href="https://instagram.com/zachkrall">Instagram</a></li>
       <li><a href="https://github.com/zachkrall">GitHub</a></li>
       <li><a href="https://are.na/zach-krall">Are.na</a></li>
+      <li><a href="https://zachkrall.tumblr.com">Tumblr</a></li>
       <li><a href="https://keybase.io/zachkrall/">Keybase</a></li>
     </ul>
     </footer>
