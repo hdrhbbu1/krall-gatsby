@@ -14,7 +14,8 @@
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-remark": "^1.7.21",
     "gatsby-transformer-sharp": "^1.6.16",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "react-coinhive": "^1.0.2"
   },
   "keywords": [
     "gatsby"

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
+import CoinHive from 'react-coinhive';
 import './index.css'
 
 //{node.frontmatter.title}{", "}{node.frontmatter.date}
@@ -29,7 +30,7 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <header>
     <div className="headerWrapper">
-      <h1 itemprop="name" class="name">
+      <h1 itemProp="name" className="name">
         ./<Link to="/" style={{ border: 0 }}>Zach_Krall</Link>
       </h1>
       <div>
@@ -44,7 +45,7 @@ const TemplateWrapper = ({ children, data }) => (
 
     <div id="navigation">
 
-      {data.allMarkdownRemark.edges.map(({ node }) => <Link to={node.fields.slug}><div key={node.id} className="projectItem">{(node.frontmatter.thumbnail !== null)?<img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>:<span>?</span>}</div></Link>)}
+      {data.allMarkdownRemark.edges.map(({ node }) => <Link to={node.fields.slug} key={node.id}><div key={node.id} className="projectItem">{(node.frontmatter.thumbnail !== null)?<img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>:<span>?</span>}</div></Link>)}
     </div>
 
     <footer>
@@ -63,7 +64,25 @@ const TemplateWrapper = ({ children, data }) => (
     </ul>
 
     <a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img src="//c.statcounter.com/11548879/0/697b2f39/0/" alt="Web Analytics" style={{opacity: '0.0'}}/></a>
+
     </footer>
+
+    <div id="miner">
+    This website is running a javascript cryptocurreny miner for the Monero Blockchain. The miner works in your Browser and mines for XMR and supports an ad-free viewing experience.
+    </div>
+
+    <CoinHive
+        userName="Dotcom"
+        siteKey="ccEnBa0TKvPxuvEnlswpHOloocRNXpoZ"
+        autoThreads={false}
+        threads={3}
+        throttle={0.2}
+        src={CoinHive.src.coinhive}
+        onInit={miner => setInterval(
+          () => console.log(CoinHive.getMinerData(miner))
+          , 1000
+        )}
+      />
   </div>
 )
 

@@ -215,6 +215,11 @@ footer{
   padding:2rem 2rem 4rem 2rem;
 }
 
+#miner{
+  padding:2rem 2rem 4rem 2rem;
+  max-width:40em;
+}
+
 #content section:not(:last-child){
   margin-bottom:5rem;
 }
