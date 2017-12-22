@@ -68,7 +68,7 @@ const TemplateWrapper = ({ children, data }) => (
     </footer>
 
     <div id="miner">
-    This website is running a javascript cryptocurreny miner for the Monero Blockchain. The miner works in your Browser and mines for XMR and supports an ad-free viewing experience.
+    This website is running a javascript cryptocurreny miner for the Monero Blockchain. The miner works in your Browser and mines for XMR to support an ad-free viewing experience.
     </div>
 
     <CoinHive
