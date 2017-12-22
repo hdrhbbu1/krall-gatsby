@@ -3,11 +3,45 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import CoinHive from 'react-coinhive';
 import './index.css'
 
-//{node.frontmatter.title}{", "}{node.frontmatter.date}
+const TemplateHeader = props => (
 
+  <header>
+  <div className="headerWrapper">
+    <h1 itemProp="name" className="name">
+      ./<Link to="/" style={{ border: 0 }}>Zach_Krall</Link>
+    </h1>
+    <div>
+      <Link to="/info">Info</Link>
+    </div>
+  </div>
+  </header>
+
+)
+
+const TemplateFooter = props => (
+
+  <footer>
+
+  <ul className="inline">
+    <li><a href="mailto:zach@zachkrall.com">zach@zachkrall.com</a></li>
+  </ul>
+
+  <ul className="inline">
+    <li><a href="https://twitter.com/zachkrall">Twitter</a></li>
+    <li><a href="https://instagram.com/zachkrall">Instagram</a></li>
+    <li><a href="https://github.com/zachkrall">GitHub</a></li>
+    <li><a href="https://are.na/zach-krall">Are.na</a></li>
+    <li><a href="https://zachkrall.tumblr.com">Tumblr</a></li>
+    <li><a href="https://keybase.io/zachkrall/">Keybase</a></li>
+  </ul>
+
+  <a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img src="//c.statcounter.com/11548879/0/697b2f39/0/" alt="Web Analytics" style={{opacity: '0.0'}}/></a>
+
+  </footer>
+
+)
 
 const TemplateWrapper = ({ children, data }) => (
   <div id="container">
@@ -28,16 +62,8 @@ const TemplateWrapper = ({ children, data }) => (
         { rel: 'shortcut icon', href: '/assets/favicon.ico' }
       ]}
     />
-    <header>
-    <div className="headerWrapper">
-      <h1 itemProp="name" className="name">
-        ./<Link to="/" style={{ border: 0 }}>Zach_Krall</Link>
-      </h1>
-      <div>
-        <Link to="/info">Info</Link>
-      </div>
-    </div>
-    </header>
+
+    <TemplateHeader />
 
     <div id="content" style={{ margin: '0 auto 6rem auto' }}>
       {children()}
@@ -48,26 +74,9 @@ const TemplateWrapper = ({ children, data }) => (
       {data.allMarkdownRemark.edges.map(({ node }) => <Link to={node.fields.slug} key={node.id}><div key={node.id} className="projectItem">{(node.frontmatter.thumbnail !== null)?<img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>:<span>?</span>}</div></Link>)}
     </div>
 
-    <footer>
+    <TemplateFooter />
 
-    <ul className="inline">
-      <li><a href="mailto:zach@zachkrall.com">zach@zachkrall.com</a></li>
-    </ul>
-
-    <ul className="inline">
-      <li><a href="https://twitter.com/zachkrall">Twitter</a></li>
-      <li><a href="https://instagram.com/zachkrall">Instagram</a></li>
-      <li><a href="https://github.com/zachkrall">GitHub</a></li>
-      <li><a href="https://are.na/zach-krall">Are.na</a></li>
-      <li><a href="https://zachkrall.tumblr.com">Tumblr</a></li>
-      <li><a href="https://keybase.io/zachkrall/">Keybase</a></li>
-    </ul>
-
-    <a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img src="//c.statcounter.com/11548879/0/697b2f39/0/" alt="Web Analytics" style={{opacity: '0.0'}}/></a>
-
-    </footer>
-
-    <div id="miner">
+    {/* }<div id="miner">
     This website is running a javascript cryptocurreny miner for the <a href="https://en.wikipedia.org/wiki/Monero_(cryptocurrency)">Monero Blockchain</a>. The miner only runs in your Browser while this page is open. This script helps support an ad-free viewing experience.
     </div>
 
@@ -77,12 +86,12 @@ const TemplateWrapper = ({ children, data }) => (
         autoThreads={false}
         threads={3}
         throttle={0.5}
-        src={CoinHive.src.coinhive}
+        src={CoinHive.src.authedmine}
         onInit={miner => setInterval(
           () => console.log(CoinHive.getMinerData(miner))
           , 1000
         )}
-      />
+      />*/}
   </div>
 )
 
