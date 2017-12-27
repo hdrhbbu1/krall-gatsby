@@ -10,7 +10,7 @@ const TemplateHeader = props => (
   <header>
   <div className="headerWrapper">
     <h1 itemProp="name" className="name">
-      ./<Link to="/" style={{ border: 0 }}>Zach_Krall</Link>
+      <Link to="/" style={{ border: 0 }}>{props.siteTitle}</Link>
     </h1>
     <div>
       <Link to="/info">Info</Link>
@@ -63,35 +63,30 @@ const TemplateWrapper = ({ children, data }) => (
       ]}
     />
 
-    <TemplateHeader />
+    <TemplateHeader siteTitle={data.site.siteMetadata.title}/>
 
     <div id="content" style={{ margin: '0 auto 6rem auto' }}>
       {children()}
     </div>
 
     <div id="navigation">
+      { data.allMarkdownRemark.edges.map(({ node }) =>
 
-      {data.allMarkdownRemark.edges.map(({ node }) => <Link to={node.fields.slug} key={node.id}><div key={node.id} className="projectItem">{(node.frontmatter.thumbnail !== null)?<img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>:<span>?</span>}</div></Link>)}
+        <Link to={node.fields.slug} key={node.id}>
+          <div key={node.id} className="projectItem">
+            { (node.frontmatter.thumbnail !== null)
+              ?
+                <img src={node.frontmatter.thumbnail.childImageSharp.original.src} alt={node.frontmatter.title}/>
+              :
+                <span>?</span>
+            }
+          </div>
+        </Link>
+        )
+      }
     </div>
 
     <TemplateFooter />
-
-    {/* }<div id="miner">
-    This website is running a javascript cryptocurreny miner for the <a href="https://en.wikipedia.org/wiki/Monero_(cryptocurrency)">Monero Blockchain</a>. The miner only runs in your Browser while this page is open. This script helps support an ad-free viewing experience.
-    </div>
-
-    <CoinHive
-        userName="Dotcom"
-        siteKey="ccEnBa0TKvPxuvEnlswpHOloocRNXpoZ"
-        autoThreads={false}
-        threads={3}
-        throttle={0.5}
-        src={CoinHive.src.authedmine}
-        onInit={miner => setInterval(
-          () => console.log(CoinHive.getMinerData(miner))
-          , 1000
-        )}
-      />*/}
   </div>
 )
 
@@ -103,6 +98,11 @@ export default TemplateWrapper
 
 export const query = graphql`
 query new{
+  site{
+    siteMetadata{
+      title
+    }
+  }
   allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC} ){
     totalCount
     edges{
