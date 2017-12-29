@@ -34,7 +34,7 @@ const IndexPage = () => (
     {/* EDUCATION */}
     <div className="grid cv"><div className="col-12"><h3>Education</h3></div><div className="col-12 grid"><div className="col-2">2015</div><div className="col-10">BFA Photography, Honors Program, School of Visual Arts (New York, NY)</div></div></div>{/* EXHIBITIONS */}<div className="grid cv"><div className="col-12"><h3>Exhibitions</h3></div><div className="col-12 grid"><div className="col-2">2017</div><div className="col-10">
               where-hows, Where Haus (<a href="https://en.wikipedia.org/wiki/The_Hole,_New_York" rel="noopener">The Hole</a>, NY)
-              <br /><a href="https://sfmoma.show/" rel="noopener">Unauthorized SFMOMA Show #567</a>, San Francisco Museum of Modern Art (San Francisco, CA) <sup>online</sup><br /><a href="https://web.archive.org/web/20170621143338/http://www.sva.edu/events/events-exhibitions/all-staff-art-show-2017">All Staff Art Show</a>, School of Visual Arts (New York, NY)
+              <br /><a href="https://sfmoma.show/" rel="noopener">Unauthorized SFMOMA Show #560</a>, San Francisco Museum of Modern Art (San Francisco, CA) <sup>online</sup><br /><a href="https://web.archive.org/web/20170621143338/http://www.sva.edu/events/events-exhibitions/all-staff-art-show-2017">All Staff Art Show</a>, School of Visual Arts (New York, NY)
             </div><div className="col-2">2016</div><div className="col-10"><a href="https://www.facebook.com/events/1596926450604299/" rel="noopener">Slippery When Wet</a>, Chinatown Soup (New York, NY)
               <br />Obstructed Views, Scott Charmin Gallery (Houston, TX)
               <br />Art-A-Hack, ThoughtWorks (New York, NY)
