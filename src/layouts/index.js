@@ -37,7 +37,18 @@ const TemplateFooter = props => (
     <li><a href="https://keybase.io/zachkrall/">Keybase</a></li>
   </ul>
 
-  <a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img src="//c.statcounter.com/11548879/0/697b2f39/0/" alt="Web Analytics" style={{opacity: '0.0'}}/></a>
+  <script type="text/javascript" dangerouslySetInnerHTML={{ __html:
+    ` var sc_project=11548879;
+      var sc_invisible=0;
+      var sc_security="697b2f39";
+      var scJsHost = (("https:" == document.location.protocol) ?
+      "https://secure." : "http://www.");
+      document.write("<sc"+"ript type='text/javascript' src='" +
+      scJsHost+
+      "statcounter.com/counter/counter.js'></"+"script>");
+    ` }}></script>
+
+  <noscript><img src="//c.statcounter.com/11548879/0/697b2f39/0/" style={{opacity: '0.0'}}/></noscript>
 
   </footer>
 
